@@ -23,7 +23,7 @@ jobs:
         run:  |
           echo "login aliyun docker repo" 
           docker version
-          docker login --username=${{ secrets.DOCKER_USERNAME }}  --password=${{ secrets.DOCKER_PASSWORD }} registry.cn-shenzhen.aliyun.com
+          docker login --username=${{ secrets.DOCKER_USERNAME }}  --password=${{ secrets.DOCKER_PASSWORD }} registry.cn-hangzhou.aliyuncs.com
           docker build . -file Dockerfile --tag $docker_repo/$image_name:$tag
           docker push $docker_repo/$iamge_name:$tag          
       
