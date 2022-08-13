@@ -22,7 +22,7 @@ jobs:
         env: 
           image_name: github-ci-demo
           docker_repo: registry.cn-hangzhou.aliyuncs.com
-          tag: latest
+          tag: v0.1.0
         run:  |
           echo "login aliyun docker repo" 
           docker version
